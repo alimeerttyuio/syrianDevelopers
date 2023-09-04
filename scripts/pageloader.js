@@ -8,7 +8,7 @@ let pagLoader = {
   mainCountainer: document.querySelector(".main"),
   getPage: async function (page) {
     if (page.content === null) {
-      await fetch(window.location.origin + page.path)
+      await fetch(window.location.origin+"syrianDevelopers" + page.path)
         .then((res) => res.text())
         .then((mainHtml) => {
           let parser = new DOMParser();
