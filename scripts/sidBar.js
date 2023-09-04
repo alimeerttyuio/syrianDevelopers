@@ -24,7 +24,7 @@ export default function prepearSidbarButton() {
     document.querySelector("aside #hussain-button").style.display = "none";
     pagLoader.getPage(pagLoader.pages.hussainMainPage);
   });
-  let karamButton = document.querySelector("aside #nael-button button");
+  let karamButton = document.querySelector("aside #karam-button button");
 
   karamButton.addEventListener("click", (e) => {
     Array.from(asideButtons).forEach((li) => {
