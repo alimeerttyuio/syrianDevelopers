@@ -1,0 +1,86 @@
+.main {
+  --content-margin: 5px;
+  grid-area: mainContent;
+  background-color: var(--main-content-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  overflow-y: scroll;
+  justify-items: center;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+#product-area {
+  position: relative;
+  grid-column: 1 / -1;
+  width: calc(100% - var(--content-margin));
+  height: 200px;
+  margin: auto;
+  background-color: rosybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: calc(100% - var(--content-margin));
+  height: 300px;
+  background-color: var(--scondary-color);
+  color: indigo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: var(--content-margin);
+}
+#product-area > :first-child {
+  width: 75%;
+  height: 90%;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+}
+#product-area > :first-child > * {
+  width: 33.33%;
+  height: 95%;
+
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: calc((200px - (200px * 95 * 90) / 10000) / 7);
+  background-color: maroon;
+  display: block;
+  position: absolute;
+  transition: transform 0.7s ease-in-out;
+}
+
+.left-arrow {
+  content: "";
+  border: 30px solid green;
+  border-color: transparent green transparent transparent;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+}
+.left-arrow:hover {
+  border-right-color: rgb(1, 56, 1);
+  cursor: pointer;
+}
+.left-arrow:click {
+  border-right-color: rgb(1, 56, 1);
+}
+.right-arrow {
+  content: "";
+  border: 30px solid green;
+  border-color: transparent transparent transparent green;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+}
+.right-arrow:hover {
+  border-left-color: darkgreen;
+  cursor: pointer;
+}
+.right-arrow:click {
+  border-right-color: rgb(1, 56, 1);
+}

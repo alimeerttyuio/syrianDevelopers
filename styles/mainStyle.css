@@ -1,0 +1,41 @@
+:root {
+  --top-color: #181818;
+  --main-text-color: #99bbcc;
+  --main-content-color: #1f1f1f;
+  --scondary-color: royalblue;
+  --opening-duration: 0.43s;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--main-text-color);
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 18% 1fr 10%; /*حطيت عدد مجموعو أكبر من 100% بالقصد لحتى أصل لشاشة أكبر من شاشة التلفون لتحت بجوز طريقتي غلط بس هيك ساويت*/
+  grid-template-columns: 15% 1fr;
+  grid-template-areas: "head head" "sidBar mainContent" "foot foot";
+}
+
+header {
+  grid-area: head;
+  background-color: var(--top-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+header > h2 {
+  color: var(--main-text-color);
+  font-size: 3em;
+  text-align: center;
+}

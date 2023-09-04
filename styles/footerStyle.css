@@ -1,0 +1,12 @@
+footer {
+  grid-area: foot;
+  background-color: var(--top-color);
+}
+footer li {
+  display: inline-block;
+  max-width: 300px;
+  min-width: 200px;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+}
