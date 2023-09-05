@@ -1,5 +1,6 @@
 aside {
-  grid-area: sidBar;
+  display: inline-block;
+  width: 20%;
   background-color: var(--top-color);
 }
 

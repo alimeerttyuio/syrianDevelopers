@@ -1,6 +1,5 @@
-body {
-  grid-template-columns: 1fr;
-  grid-template-areas: "head" "mainContent" "foot";
+.main {
+  width: 100%;
 }
 .sidBar-button {
   display: flex;

@@ -1,5 +1,7 @@
 footer {
-  grid-area: foot;
+  display: block;
+  width: 100%;
+  height: 70px;
   background-color: var(--top-color);
 }
 footer li {

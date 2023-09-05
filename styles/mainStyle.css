@@ -9,6 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0px;
   color: var(--main-text-color);
 }
 
@@ -21,18 +22,19 @@ li {
 body {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  display: -moz-grid;
-  display: -ms-grid;
-  grid-template-rows: 18% 1fr 10%; /*حطيت عدد مجموعو أكبر من 100% بالقصد لحتى أصل لشاشة أكبر من شاشة التلفون لتحت بجوز طريقتي غلط بس هيك ساويت*/
-  grid-template-columns: 15% 1fr;
-  grid-template-areas: "head head" "sidBar mainContent" "foot foot";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 header {
-  grid-area: head;
+  display: block;
+  width: 100%;
+  height: 115px;
   background-color: var(--top-color);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
