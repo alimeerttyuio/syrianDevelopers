@@ -7,7 +7,7 @@
   background-color: var(--main-content-color);
   flex-wrap: wrap;
   overflow-y: scroll;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .main::-webkit-scrollbar {
   display: none;
@@ -20,7 +20,7 @@
   margin: auto;
   background-color: rosybrown;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .card {
